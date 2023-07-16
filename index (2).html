@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <div class="calci">
+        <form id="for" name="theform">
+            <input class="inp" type="text" name="res">
+            <br><br>
+        <div class="hello">
+                <input type="button" class="bt" value="1" onclick="theform.res.value+='1'">
+                <input type="button" class="bt" value="2" onclick="theform.res.value+='2'">
+                <input type="button" class="bt" value="3" onclick="theform.res.value+='3'">
+                <input type="button" class="bt" value="+" onclick="theform.res.value+='+'">
+                <input type="button" class="bt" value="4" onclick="theform.res.value+='4'">
+                <input type="button" class="bt" value="5" onclick="theform.res.value+='5'">
+                <input type="button" class="bt" value="6" onclick="theform.res.value+='6'">
+                <input type="button" class="bt" value="-" onclick="theform.res.value+='-'">
+                <input type="button" class="bt" value="7" onclick="theform.res.value+='7'">
+                <input type="button" class="bt" value="8" onclick="theform.res.value+='8'">
+                <input type="button" class="bt" value="9" onclick="theform.res.value+='9'">
+                <input type="button" class="bt" value="/" onclick="theform.res.value+='/'">
+                <input type="button" class="bt" value="%" onclick="theform.res.value+='%'">
+                <input type="button" class="bt" value="0" onclick="theform.res.value+='0'">
+                <input type="button" class="bt" value="*" onclick="theform.res.value+='*'">
+                <input type="button" class="bt" value="=" onclick="theform.res.value=eval(theform.res.value)">
+        </div>
+            <div class="grid">
+                <input type="button" class="btt" value="Clear All" onclick="theform.res.value=''">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
